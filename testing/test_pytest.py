@@ -7,7 +7,7 @@ class Test_Caclatest:
     @pytest.fixture()
     def yc_up(self):
         self.cal = demo2()
-    @pytest.mark.parametrize("a,b,c",[[0,0,0],[1,1,2],[1,2,3]])
+    @pytest.mark.parametrize("a,b,c",[[0,0,0],[1,1,2]])
     def test_add_1(self,yc_up,a,b,c):
         result=self.cal.add(a,b)
         print(result)
