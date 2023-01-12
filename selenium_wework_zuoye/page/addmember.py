@@ -24,6 +24,7 @@ class AddMember(BasePage):
 
     def get_member(self):
         time.sleep(3)
+        # self.wait_for_click(By.CSS_SELECTOR, '.ww_checkbox')
         elements = self.finds(By.CSS_SELECTOR, '.member_colRight_memberTable_tr>td:nth-child(2)')
         # elements=self._driver.find_elements(By.CSS_SELECTOR,'.member_colRight_memberTable_tr>td:nth-child(2)')
         list=[ele.get_attribute("title") for ele in elements]

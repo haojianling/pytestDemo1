@@ -5,7 +5,7 @@ class TestAddMember:
     def setup(self):
         self.index=Index()
     def test_addmember(self):
-        a=self.index.goto_mail_list().goto_add_member()
-        a.add_member()
-        print(a.get_member())
-        assert '999' in a.get_member()
+        add_member=self.index.goto_mail_list().goto_add_member()
+        add_member.add_member()
+        # print(add_member.get_member())
+        assert '999' in add_member.get_member()
